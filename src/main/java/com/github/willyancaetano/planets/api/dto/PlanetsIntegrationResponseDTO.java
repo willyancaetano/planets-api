@@ -1,10 +1,12 @@
 package com.github.willyancaetano.planets.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public final class PlanetsIntegrationResponseDTO {
 
     @JsonProperty("results")
@@ -20,6 +22,7 @@ public final class PlanetsIntegrationResponseDTO {
     }
 }
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 final class Result implements DTO {
 
     final String[] films;

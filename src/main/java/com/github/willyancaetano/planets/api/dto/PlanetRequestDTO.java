@@ -1,7 +1,6 @@
 package com.github.willyancaetano.planets.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.netty.util.internal.StringUtil;
 import org.apache.commons.lang3.StringUtils;
 
 public final class PlanetRequestDTO implements RequestDTO {

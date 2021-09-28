@@ -40,7 +40,7 @@ public final class Planet {
         return terrain;
     }
 
-    public Integer getFilms() {
+    public final Integer getFilms() {
         return films;
     }
 

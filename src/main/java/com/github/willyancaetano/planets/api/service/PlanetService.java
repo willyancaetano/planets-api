@@ -56,7 +56,7 @@ public class PlanetService {
         Optional<Planet> optionalPlanet = repository.findByName(planetRequestDTO.getName());
 
         if(optionalPlanet.isPresent()){
-            // TODO existe
+            //Conflict
         }
 
         PlanetsIntegrationResponseDTO infoPlanet = client.getInfoPlanet(planetRequestDTO.getName());
